@@ -3,10 +3,10 @@ Products API for listing products, adding them to wishlist and buying them with 
 
 # 1. CRUD for Products:
 
-** GET Products endpoint:**
+**GET Products endpoint:**
 Endpoint: http://localhost:3000/listOfProducts (PORT as per specified).
 
-** POST new Products endpoint**
+**POST new Products endpoint**
 Endpoint: http://localhost:3000/listOfProducts 
 Data in JSON format to be posted: 
 ```json 
@@ -20,7 +20,7 @@ Data in JSON format to be posted:
 }
 ```
 
-** PUT (update) existing Product:**
+**PUT (update) existing Product:**
 Endpoint: http://localhost:3000/listOfProducts/6120acc78808c1023d013a9c
 (http://localhost:3000/listOfProducts/:id)
 Data in JSON:
@@ -31,15 +31,15 @@ Data in JSON:
 }
 ```
 
-** DELETE Product:**
+**DELETE Product:**
 Endpoint: http://localhost:3000/listOfProducts/61202ad654d911bb7b3c5f98
 (http://localhost:3000/listOfProducts/:id)
 
 # 2. CRUD for Wishlist:
 
-** POST (add) product to wishlist:**
+**POST (add) product to wishlist:**
 Endpoint: http://localhost:3000/wishlist/test/6120bb7373688c86910b6c77 
-(http://localhost:3000/wishlist/:user/:id) // Use id from products.
+(http://localhost:3000/wishlist/:user/:id) // Use id from **products**.
 
 Adding an extra field of date on which to be reminded:
 ```json
@@ -48,27 +48,27 @@ Adding an extra field of date on which to be reminded:
 }
 ```
 
-** GET wishlist products:**
+**GET wishlist products:**
 Endpoint: http://localhost:3000/wishlist/test
 (http://localhost:3000/wishlist/:id)
 
-** PUT (update) wishlist products:**
+**PUT (update) wishlist products:**
 Endpoint: http://localhost:3000/wishlist/test/6120bfe03b93563936e763ec
-(http://localhost:3000/wishlist/:user/:id) // Use id from wishlists. Updating the date:
+(http://localhost:3000/wishlist/:user/:id) // Use id from **wishlists**. Updating the date:
 ```json 
 {
     "remindToBuyOn": "02-10-2021"
 }
 ```
 
-** DELETE wishlist products:**
+**DELETE wishlist products:**
 Endpoint: http://localhost:3000/wishlist/test/6120bf7fce3051bb782a70cb
 (http://localhost:3000/wishlist/:user/:id)
 
 # 3. CRUD for buying:
 
 ** POST (buy product):**
-Endpoint: http://localhost:3000/buy/test/6120bb7373688c86910b6c77 // Use id from products.
+Endpoint: http://localhost:3000/buy/test/6120bb7373688c86910b6c77 // Use id from **products**.
 (http://localhost:3000/buy/:user/:id)
 
 Specify the quantity to be bought:
@@ -79,12 +79,12 @@ Specify the quantity to be bought:
 ```
 Original products quantity also gets updated on buying the product and specifying the quantity that you want to buy.
 
-** GET products bought:**
+**GET products bought:**
 Endpoint: http://localhost:3000/buy/test
 (http://localhost:3000/buy/:user)
 
-** PUT (update) products_bought:**
-Endpoint: http://localhost:3000/buy/test/6120caa91bed8bffa4dbe0b4 // Use id from item_bought
+**PUT (update) products_bought:**
+Endpoint: http://localhost:3000/buy/test/6120caa91bed8bffa4dbe0b4 // Use id from **item_bought.**
 (http://localhost:3000/buy/:user/:id)
 
 Specify quantity to be updated: 
@@ -95,8 +95,8 @@ Specify quantity to be updated:
 ```
 Original products quantity also gets updated on updating the quantity of the product that is bought.
 
-** DELETE item that was bought**
-Endpoint: http://localhost:3000/buy/test/6120caa91bed8bffa4dbe0b4
+**DELETE item that was bought**
+Endpoint: http://localhost:3000/buy/test/6120caa91bed8bffa4dbe0b4 // Use id from **item_bought**.
 (http://localhost:3000/buy/:user/:id)
 
 Original products quantity gets reset on deleting (cancelling order) the product that you had bought initially.
