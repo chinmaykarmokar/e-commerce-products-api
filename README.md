@@ -11,12 +11,12 @@ Endpoint: http://localhost:3000/listOfProducts
 Data in JSON format to be posted: 
 ```json 
 {
-	"name": "Product 1",
-	"color": "blue",
-	"price": 100,
-	"originalQunatity": 100,
-	"newQuantity": 100,
-	"description": "A product of blue color."
+    "name": "Product 1",
+    "color": "blue",
+    "price": 100,
+    "originalQunatity": 100,
+    "newQuantity": 100,
+    "description": "A product of blue color."
 }
 ```
 
@@ -26,8 +26,8 @@ Endpoint: http://localhost:3000/listOfProducts/6120acc78808c1023d013a9c
 Data in JSON:
 ```json
 {
-	"price": 150,
-	"description": "A product of the color BLUE."
+    "price": 150,
+    "description": "A product of the color BLUE."
 }
 ```
 
@@ -44,7 +44,7 @@ Endpoint: http://localhost:3000/wishlist/test/6120bb7373688c86910b6c77
 Adding an extra field of date on which to be reminded:
 ```json
 {
-	"remindToBuyOn": "01-10-2021"
+    "remindToBuyOn": "01-10-2021"
 }
 ```
 
@@ -57,7 +57,7 @@ Endpoint: http://localhost:3000/wishlist/test/6120bfe03b93563936e763ec
 (http://localhost:3000/wishlist/:user/:id) // Use id from wishlists. Updating the date:
 ```json 
 {
-	"remindToBuyOn": "02-10-2021"
+    "remindToBuyOn": "02-10-2021"
 }
 ```
 
@@ -74,7 +74,7 @@ Endpoint: http://localhost:3000/buy/test/6120bb7373688c86910b6c77 // Use id from
 Specify the quantity to be bought:
 ```json
 {
-	"quantity": 2
+    "quantity": 2
 }
 ```
 Original products quantity also gets updated on buying the product and specifying the quantity that you want to buy.
@@ -90,7 +90,7 @@ Endpoint: http://localhost:3000/buy/test/6120caa91bed8bffa4dbe0b4 // Use id from
 Specify quantity to be updated: 
 ```json 
 {
-	"quantity": 3
+    "quantity": 3
 }
 ```
 Original products quantity also gets updated on updating the quantity of the product that is bought.
