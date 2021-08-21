@@ -3,7 +3,7 @@ Products API for listing products, adding them to wishlist and buying them with 
 
 # 1. CRUD for Products:
 
-**GET Products endpoint:**
+##### GET Products endpoint: #####
 Endpoint: http://localhost:3000/listOfProducts (PORT as per specified).
 
 **POST new Products endpoint**
