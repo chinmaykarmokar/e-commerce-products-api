@@ -61,7 +61,7 @@ Endpoint: http://localhost:3000/wishlist/test/6120bfe03b93563936e763ec
 }
 ```
 
-# DELETE wishlist products:
+## DELETE wishlist products:
 Endpoint: http://localhost:3000/wishlist/test/6120bf7fce3051bb782a70cb
 (http://localhost:3000/wishlist/:user/:id)
 
